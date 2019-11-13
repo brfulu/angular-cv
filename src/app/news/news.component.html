@@ -1,1 +1,87 @@
-<p>news works!</p>
+<div class="container ">
+    <div class="row mt-4 justify-content-between">
+        <div class="col-8 offset-2 text-center">
+            <h4>News</h4>
+            <hr>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-8 offset-2">
+
+            <!--- \\\\\\\Post-->
+            <div class="card">
+                <div class="card-body">
+                    <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>10 min ago</div>
+                    <h5 class="card-title text-primary">Lorem ipsum dolor sit amet, consectetur adip.</h5>
+
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo recusandae nulla rem eos ipsa
+                        praesentium esse magnam nemo dolor
+                        sequi fuga quia quaerat cum, obcaecati hic, molestias minima iste voluptates.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <a *ngIf="!doLike.get('news-1')" href="javascript:void(0)" class="card-link"
+                        (click)="toggleLike('news-1')">
+                        <i class="mr-1 far fa-heart"></i>Like
+                    </a>
+                    <a *ngIf="doLike.get('news-1')" href="javascript:void(0)" class="card-link"
+                        (click)="toggleLike('news-1')">
+                        <i class="mr-1 fas fa-heart"></i>Liked
+                    </a>
+                </div>
+            </div>
+            <!-- Post /////-->
+
+            <!--- \\\\\\\Post-->
+            <div class="card mt-4">
+                <div class="card-body">
+                    <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>10 min ago</div>
+                    <h5 class="card-title text-primary">Lorem ipsum dolor sit amet, consectetur adip.</h5>
+
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo recusandae nulla rem eos ipsa
+                        praesentium esse magnam nemo dolor
+                        sequi fuga quia quaerat cum, obcaecati hic, molestias minima iste voluptates.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <a *ngIf="!doLike.get('news-2')" href="javascript:void(0)" class="card-link"
+                        (click)="toggleLike('news-2')">
+                        <i class="mr-1 far fa-heart"></i>Like
+                    </a>
+                    <a *ngIf="doLike.get('news-2')" href="javascript:void(0)" class="card-link"
+                        (click)="toggleLike('news-2')">
+                        <i class="mr-1 fas fa-heart"></i>Liked
+                    </a>
+                </div>
+            </div>
+            <!-- Post /////-->
+
+            <!--- \\\\\\\Post-->
+            <div class="card mt-4">
+                <div class="card-body">
+                    <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>10 min ago</div>
+                    <h5 class="card-title text-primary">Lorem ipsum dolor sit amet, consectetur adip.</h5>
+
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo recusandae nulla rem eos ipsa
+                        praesentium esse magnam nemo dolor
+                        sequi fuga quia quaerat cum, obcaecati hic, molestias minima iste voluptates.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <a *ngIf="!doLike.get('news-3')" href="javascript:void(0)" class="card-link"
+                        (click)="toggleLike('news-3')">
+                        <i class="mr-1 far fa-heart"></i>Like
+                    </a>
+                    <a *ngIf="doLike.get('news-3')" href="javascript:void(0)" class="card-link"
+                        (click)="toggleLike('news-3')">
+                        <i class="mr-1 fas fa-heart"></i>Liked
+                    </a>
+                </div>
+            </div>
+            <!-- Post /////-->
+        </div>
+    </div>
+</div>

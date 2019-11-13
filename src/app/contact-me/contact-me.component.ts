@@ -24,6 +24,8 @@ export class ContactMeComponent implements OnInit {
 
   onSubmit(data) {
     console.log(data);
+    alert('Poruka poslata!');
+    this.contactForm.reset();
   }
 
   get email() { return this.contactForm.get('email'); }
