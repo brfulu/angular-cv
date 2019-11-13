@@ -3,18 +3,10 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 
 
 const routes: Routes = [
-  {
-    path: '',
-    loadChildren: './home/home.module#HomeModule'
-  },
-  {
-    path: 'news',
-    loadChildren: './news/news.module#NewsModule'
-  },
-  {
-    path: 'contact-me',
-    loadChildren: './contact-me/contact-me.module#ContactMeModule'
-  }
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', loadChildren: './home/home.module#HomeModule' },
+  { path: 'news', loadChildren: './news/news.module#NewsModule' },
+  { path: 'contact-me', loadChildren: './contact-me/contact-me.module#ContactMeModule' }
 ];
 
 @NgModule({
