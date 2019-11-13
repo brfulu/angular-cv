@@ -1,1 +1,219 @@
-<p>home works!</p>
+<div class="container mt-3 mb-5">
+    <div class="row text-center justify-content-center">
+        <img class="img-thumbnail" src="../../assets/img/branko.jpeg" alt="">
+    </div>
+    <div class="row justify-content-center mt-1">
+        <div class="col-12 text-center">
+            <h4>Branko Fulurija</h4>
+        </div>
+        <div class="col-12 text-center">
+            <p>Software Engineer</p>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-5">
+            <h4>Work Experience</h4>
+            <ul class="timeline">
+                <li>
+                    <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a>
+                    <button id="cv-1" class="btn btn-sm btn-primary float-right ml-3" (click)="toggleElement($event)">
+                        <i *ngIf="itemExpanded.get('cv-1')" class="fas fa-arrow-up"></i>
+                        <i *ngIf="!itemExpanded.get('cv-1')" class="fas fa-arrow-down"></i>
+                    </button>
+
+                    <a class="float-right">21 March, 2014</a>
+                    <p [hidden]="itemExpanded.get('cv-1')">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Quisque
+                        scelerisque diam non nisi
+                        semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula
+                        in
+                        sodales vehicula....</p>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a>
+                    <button id="cv-2" class="btn btn-sm btn-primary float-right ml-3" (click)="toggleElement($event)">
+                        <i *ngIf="itemExpanded.get('cv-2')" class="fas fa-arrow-up"></i>
+                        <i *ngIf="!itemExpanded.get('cv-2')" class="fas fa-arrow-down"></i>
+                    </button>
+
+                    <a class="float-right">21 March, 2014</a>
+                    <p [hidden]="itemExpanded.get('cv-2')">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Quisque
+                        scelerisque diam non nisi
+                        semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula
+                        in
+                        sodales vehicula....</p>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a>
+                    <button id="cv-3" class="btn btn-sm btn-primary float-right ml-3" (click)="toggleElement($event)">
+                        <i *ngIf="itemExpanded.get('cv-3')" class="fas fa-arrow-up"></i>
+                        <i *ngIf="!itemExpanded.get('cv-3')" class="fas fa-arrow-down"></i>
+                    </button>
+
+                    <a class="float-right">21 March, 2014</a>
+                    <p [hidden]="itemExpanded.get('cv-3')">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Quisque
+                        scelerisque diam non nisi
+                        semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula
+                        in
+                        sodales vehicula....</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-md-5 offset-lg-2">
+            <h4>Certificates</h4>
+            <ul class="timeline">
+                <li>
+                    <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a>
+                    <button id="cv-1" class="btn btn-sm btn-primary float-right ml-3" (click)="toggleElement($event)">
+                        <i *ngIf="itemExpanded.get('cv-1')" class="fas fa-arrow-up"></i>
+                        <i *ngIf="!itemExpanded.get('cv-1')" class="fas fa-arrow-down"></i>
+                    </button>
+
+                    <a class="float-right">21 March, 2014</a>
+                    <p [hidden]="itemExpanded.get('cv-1')">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Quisque
+                        scelerisque diam non nisi
+                        semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula
+                        in
+                        sodales vehicula....</p>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a>
+                    <button id="cv-2" class="btn btn-sm btn-primary float-right ml-3" (click)="toggleElement($event)">
+                        <i *ngIf="itemExpanded.get('cv-2')" class="fas fa-arrow-up"></i>
+                        <i *ngIf="!itemExpanded.get('cv-2')" class="fas fa-arrow-down"></i>
+                    </button>
+
+                    <a class="float-right">21 March, 2014</a>
+                    <p [hidden]="itemExpanded.get('cv-2')">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Quisque
+                        scelerisque diam non nisi
+                        semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula
+                        in
+                        sodales vehicula....</p>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a>
+                    <button id="cv-3" class="btn btn-sm btn-primary float-right ml-3" (click)="toggleElement($event)">
+                        <i *ngIf="itemExpanded.get('cv-3')" class="fas fa-arrow-up"></i>
+                        <i *ngIf="!itemExpanded.get('cv-3')" class="fas fa-arrow-down"></i>
+                    </button>
+
+                    <a class="float-right">21 March, 2014</a>
+                    <p [hidden]="itemExpanded.get('cv-3')">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Quisque
+                        scelerisque diam non nisi
+                        semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula
+                        in
+                        sodales vehicula....</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-md-5 mt-lg-4">
+            <h4>Education</h4>
+            <ul class="timeline">
+                <li>
+                    <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a>
+                    <button id="cv-1" class="btn btn-sm btn-primary float-right ml-3" (click)="toggleElement($event)">
+                        <i *ngIf="itemExpanded.get('cv-1')" class="fas fa-arrow-up"></i>
+                        <i *ngIf="!itemExpanded.get('cv-1')" class="fas fa-arrow-down"></i>
+                    </button>
+
+                    <a class="float-right">21 March, 2014</a>
+                    <p [hidden]="itemExpanded.get('cv-1')">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Quisque
+                        scelerisque diam non nisi
+                        semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula
+                        in
+                        sodales vehicula....</p>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a>
+                    <button id="cv-2" class="btn btn-sm btn-primary float-right ml-3" (click)="toggleElement($event)">
+                        <i *ngIf="itemExpanded.get('cv-2')" class="fas fa-arrow-up"></i>
+                        <i *ngIf="!itemExpanded.get('cv-2')" class="fas fa-arrow-down"></i>
+                    </button>
+
+                    <a class="float-right">21 March, 2014</a>
+                    <p [hidden]="itemExpanded.get('cv-2')">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Quisque
+                        scelerisque diam non nisi
+                        semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula
+                        in
+                        sodales vehicula....</p>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a>
+                    <button id="cv-3" class="btn btn-sm btn-primary float-right ml-3" (click)="toggleElement($event)">
+                        <i *ngIf="itemExpanded.get('cv-3')" class="fas fa-arrow-up"></i>
+                        <i *ngIf="!itemExpanded.get('cv-3')" class="fas fa-arrow-down"></i>
+                    </button>
+
+                    <a class="float-right">21 March, 2014</a>
+                    <p [hidden]="itemExpanded.get('cv-3')">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Quisque
+                        scelerisque diam non nisi
+                        semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula
+                        in
+                        sodales vehicula....</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-md-5 offset-lg-2 mt-lg-4">
+            <h4>Achievements</h4>
+            <ul class="timeline">
+                <li>
+                    <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a>
+                    <button id="cv-1" class="btn btn-sm btn-primary float-right ml-3" (click)="toggleElement($event)">
+                        <i *ngIf="itemExpanded.get('cv-1')" class="fas fa-arrow-up"></i>
+                        <i *ngIf="!itemExpanded.get('cv-1')" class="fas fa-arrow-down"></i>
+                    </button>
+
+                    <a class="float-right">21 March, 2014</a>
+                    <p [hidden]="itemExpanded.get('cv-1')">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Quisque
+                        scelerisque diam non nisi
+                        semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula
+                        in
+                        sodales vehicula....</p>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a>
+                    <button id="cv-2" class="btn btn-sm btn-primary float-right ml-3" (click)="toggleElement($event)">
+                        <i *ngIf="itemExpanded.get('cv-2')" class="fas fa-arrow-up"></i>
+                        <i *ngIf="!itemExpanded.get('cv-2')" class="fas fa-arrow-down"></i>
+                    </button>
+
+                    <a class="float-right">21 March, 2014</a>
+                    <p [hidden]="itemExpanded.get('cv-2')">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Quisque
+                        scelerisque diam non nisi
+                        semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula
+                        in
+                        sodales vehicula....</p>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a>
+                    <button id="cv-3" class="btn btn-sm btn-primary float-right ml-3" (click)="toggleElement($event)">
+                        <i *ngIf="itemExpanded.get('cv-3')" class="fas fa-arrow-up"></i>
+                        <i *ngIf="!itemExpanded.get('cv-3')" class="fas fa-arrow-down"></i>
+                    </button>
+
+                    <a class="float-right">21 March, 2014</a>
+                    <p [hidden]="itemExpanded.get('cv-3')">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Quisque
+                        scelerisque diam non nisi
+                        semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula
+                        in
+                        sodales vehicula....</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

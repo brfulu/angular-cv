@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  itemExpanded: Map<String, Boolean> = new Map();
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  toggleElement(e) {
+    let id = e.currentTarget.id;
+    let expanded = this.itemExpanded.get(id);
+    this.itemExpanded.set(id, !expanded);
+  }
 }

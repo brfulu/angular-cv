@@ -1,52 +1,68 @@
-<div class="footer bg-dark text-white fixed-bottom">
+<div class="footer bg-dark text-white">
     <div class="container-fluid text-center text-md-left">
-        <div class="row mt-3">
-            <div class="col-md-6 mt-md-0 mt-3">
-                <h5 class="text-uppercase">Footer Content</h5>
-                <p>Here you can use rows and columns to organize your footer content.</p>
+        <div class="row mt-3 pt-4">
+            <div class="col-lg-4 col-md-6 mt-md-0 mt-3">
+                <h5 class="text-uppercase font-weight-bold">Branko Fulurija</h5>
+                <h5>Software Engineer</h5>
+                <p>Interested in working on challenging technical tasks,
+                    solving complex problems and learning new
+                    technologies. Award-winning competitive
+                    programmer. Online course creator and tutor.
+                    Hackathon winner. 5x AWS certified.</p>
             </div>
 
             <hr class="clearfix w-100 d-md-none pb-3">
 
-            <div class="col-md-3 mb-md-0 mb-3">
-                <h5 class="text-uppercase">Projects</h5>
+            <div class="offset-lg-2 col-md-3 mb-md-0 mb-3">
+                <h5 class="text-uppercase font-weight-bold">Projects</h5>
                 <ul class="list-unstyled">
                     <li>
-                        <a href="#!">Link 1</a>
+                        <a href="https://github.com/brfulu/cinema-microservice">Cinema Microservice</a>
                     </li>
-                    <li>
-                        <a href="#!">Link 2</a>
+                    <li class="mt-1">
+                        <a href="https://brfulu.github.io/closest-points-simulation/">Closest Points Simulation</a>
                     </li>
-                    <li>
-                        <a href="#!">Link 3</a>
+                    <li class="mt-1">
+                        <a href="https://github.com/brfulu/foo-lang-compiler">FooLang Compiler</a>
                     </li>
-                    <li>
-                        <a href="#!">Link 4</a>
+                    <li class="mt-1">
+                        <a href="https://github.com/brfulu/algorithms">Algorithms</a>
+                    </li>
+                    <li class="mt-1">
+                        <a href="https://github.com/brfulu/web-crawler">Web Crawler</a>
                     </li>
                 </ul>
             </div>
 
             <div class="col-md-3 mb-md-0 mb-3">
-                <h5 class="text-uppercase">Links</h5>
+                <h5 class="text-uppercase font-weight-bold">Connect</h5>
                 <ul class="list-unstyled">
                     <li>
-                        <a href="#!">Link 1</a>
+                        <a href="#!">
+                            <i class="fa fa-2x fa-envelope"></i>
+                        </a>
                     </li>
-                    <li>
-                        <a href="#!">Link 2</a>
+                    <li class="mt-1">
+                        <a href="#!">
+                            <i class="fab  fa-2x fa-facebook"></i>
+                        </a>
                     </li>
-                    <li>
-                        <a href="#!">Link 3</a>
+                    <li class="mt-1">
+                        <a href="#!">
+                            <i class="fab  fa-2x fa-linkedin"></i>
+                        </a>
                     </li>
-                    <li>
-                        <a href="#!">Link 4</a>
+                    <li class="mt-1">
+                        <a href="#!">
+                            <i class="fab  fa-2x fa-github"></i>
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <div class="footer-copyright text-center py-3">
-        © 2019 Copyright: Branko Fulurija
+    <div class="footer-copyright text-center py-3 bg-primary">
+        © {{ today | date: 'yyyy' }} Copyright: Branko Fulurija
     </div>
 </div>
