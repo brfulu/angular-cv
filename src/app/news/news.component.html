@@ -21,11 +21,11 @@
                     </p>
                 </div>
                 <div class="card-footer">
-                    <a *ngIf="!doLike.get('news-1')" href="javascript:void(0)" class="card-link"
+                    <a *ngIf="!doLike('news-1')" href="javascript:void(0)" class="card-link"
                         (click)="toggleLike('news-1')">
                         <i class="mr-1 far fa-heart"></i>Like
                     </a>
-                    <a *ngIf="doLike.get('news-1')" href="javascript:void(0)" class="card-link"
+                    <a *ngIf="doLike('news-1')" href="javascript:void(0)" class="card-link"
                         (click)="toggleLike('news-1')">
                         <i class="mr-1 fas fa-heart"></i>Liked
                     </a>
@@ -46,11 +46,11 @@
                     </p>
                 </div>
                 <div class="card-footer">
-                    <a *ngIf="!doLike.get('news-2')" href="javascript:void(0)" class="card-link"
+                    <a *ngIf="!doLike('news-2')" href="javascript:void(0)" class="card-link"
                         (click)="toggleLike('news-2')">
                         <i class="mr-1 far fa-heart"></i>Like
                     </a>
-                    <a *ngIf="doLike.get('news-2')" href="javascript:void(0)" class="card-link"
+                    <a *ngIf="doLike('news-2')" href="javascript:void(0)" class="card-link"
                         (click)="toggleLike('news-2')">
                         <i class="mr-1 fas fa-heart"></i>Liked
                     </a>
@@ -71,11 +71,11 @@
                     </p>
                 </div>
                 <div class="card-footer">
-                    <a *ngIf="!doLike.get('news-3')" href="javascript:void(0)" class="card-link"
+                    <a *ngIf="!doLike('news-3')" href="javascript:void(0)" class="card-link"
                         (click)="toggleLike('news-3')">
                         <i class="mr-1 far fa-heart"></i>Like
                     </a>
-                    <a *ngIf="doLike.get('news-3')" href="javascript:void(0)" class="card-link"
+                    <a *ngIf="doLike('news-3')" href="javascript:void(0)" class="card-link"
                         (click)="toggleLike('news-3')">
                         <i class="mr-1 fas fa-heart"></i>Liked
                     </a>

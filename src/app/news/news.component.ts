@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LikeService } from './like.service';
 
 @Component({
   selector: 'app-news',
@@ -6,18 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./news.component.css']
 })
 export class NewsComponent implements OnInit {
-  doLike: Map<string, boolean> = new Map();
 
-  constructor() { }
+  constructor(private likeService: LikeService) { }
 
   ngOnInit() {
   }
 
-  toggleLike(id) {
-    let value = this.doLike.get(id);
-    console.log(value);
+  toggleLike(id: string): void {
+    this.likeService.toggleLike(id);
+  }
 
-    this.doLike.set(id, !value);
+  doLike(id: string): boolean {
+    return this.likeService.doLike(id);
   }
 
 }
