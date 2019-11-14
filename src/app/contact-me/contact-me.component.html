@@ -7,46 +7,7 @@
     </div>
     <div class="row mt-3 mb-3 justify-content-center">
         <div class="col-6 ">
-            <form [formGroup]="contactForm" (ngSubmit)="onSubmit(contactForm.value)">
-                <div class="form-group">
-                    <label for="firstName">First Name</label>
-                    <input type="text" class="form-control" placeholder="Enter first name" formControlName="firstName">
-                </div>
-
-                <div class="form-group">
-                    <label for="lastName">Last Name</label>
-                    <input type="text" class="form-control" placeholder="Enter last name" formControlName="lastName">
-                </div>
-
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input id="email" type="email" class="form-control" placeholder="Enter email"
-                        formControlName="email" required>
-
-                    <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert alert-danger">
-                        <div *ngIf="email.errors.required">
-                            Email is required.
-                        </div>
-                        <div *ngIf="email.errors.email">
-                            You must enter a valid email.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea class="form-control" cols="30" rows="6" placeholder="Enter message"
-                        formControlName="message"></textarea>
-
-                    <div *ngIf="message.invalid && (message.dirty || message.touched)" class="alert alert-danger">
-                        <div *ngIf="message.errors.required">
-                            Message is required.
-                        </div>
-                    </div>
-                </div>
-
-                <button type="submit" class="btn btn-primary" [disabled]="!contactForm.valid">Submit</button>
-            </form>
+            <app-contact-form (formSubmit)="formSubmit($event)"></app-contact-form>
         </div>
     </div>
 </div>
