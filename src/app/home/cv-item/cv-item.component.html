@@ -1,0 +1,14 @@
+<li>
+    <a target="_blank" href="http://www.fon.bg.ac.rs/2018/04/zatvoren-je-peti-po-redu-fon-hakaton/">
+        {{ title }}
+    </a>
+    <button class="btn btn-sm btn-primary float-right ml-3" (click)="toggle()">
+        <i *ngIf="expanded" class="fas fa-arrow-up"></i>
+        <i *ngIf="!expanded" class="fas fa-arrow-down"></i>
+    </button>
+
+    <a class="float-right">{{ dateRange }}</a>
+    <p [hidden]="!expanded">
+        {{ content }}
+    </p>
+</li>
