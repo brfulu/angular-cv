@@ -1,0 +1,18 @@
+<div class="card mt-4">
+    <div class="card-body">
+        <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>{{ date }}</div>
+        <h5 class="card-title text-primary">{{ title }}</h5>
+
+        <p class="card-text">
+            {{ content }}
+        </p>
+    </div>
+    <div class="card-footer">
+        <a *ngIf="!doLike()" href="javascript:void(0)" class="card-link" (click)="toggleLike()">
+            <i class="mr-1 far fa-heart"></i>Like
+        </a>
+        <a *ngIf="doLike()" href="javascript:void(0)" class="card-link" (click)="toggleLike()">
+            <i class="mr-1 fas fa-heart"></i>Liked
+        </a>
+    </div>
+</div>
