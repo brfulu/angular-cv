@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  itemExpanded: Map<String, Boolean> = new Map();
+  itemExpanded: Map<string, boolean> = new Map();
 
   constructor() { }
 
@@ -17,5 +17,12 @@ export class HomeComponent implements OnInit {
     let id = e.currentTarget.id;
     let expanded = this.itemExpanded.get(id);
     this.itemExpanded.set(id, !expanded);
+  }
+
+  isExpanded(id: string): boolean {
+    if (!this.itemExpanded.has(id)) {
+      this.itemExpanded.set(id, true);
+    }
+    return this.itemExpanded.get(id);
   }
 }
