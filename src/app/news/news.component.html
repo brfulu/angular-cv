@@ -11,13 +11,16 @@
             <!--- \\\\\\\Post-->
             <div class="card">
                 <div class="card-body">
-                    <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>10 min ago</div>
-                    <h5 class="card-title text-primary">Lorem ipsum dolor sit amet, consectetur adip.</h5>
+                    <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>April 3rd 2018</div>
+                    <h5 class="card-title text-primary">Tim sa RAF-a najbolji na FON Hakatonu</h5>
 
                     <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo recusandae nulla rem eos ipsa
-                        praesentium esse magnam nemo dolor
-                        sequi fuga quia quaerat cum, obcaecati hic, molestias minima iste voluptates.
+                        U Beogradu je 31. marta i 1. aprila održan je peti po redu „FON Hakaton“, dvadesetčetvoročasovno
+                        takmičenje u programiranju. Prvo mesto na hakatonu čija je tema bila „Analiza Big Data podataka“
+                        osvojila je ekipa „RAFx“ koju čine studenti druge godine Računarskog fakulteta: Vanja Paunović,
+                        Mihailo Vignjević, Branko Fulurija i Miloš Milunović.
+                        Ovaj tradicionalni projekat se održava u saradnji sa „Istraživačko-razvojnim centrom“ Fakulteta
+                        organizacionih nauka.
                     </p>
                 </div>
                 <div class="card-footer">
@@ -36,13 +39,18 @@
             <!--- \\\\\\\Post-->
             <div class="card mt-4">
                 <div class="card-body">
-                    <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>10 min ago</div>
-                    <h5 class="card-title text-primary">Lorem ipsum dolor sit amet, consectetur adip.</h5>
+                    <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>July 2nd 2016</div>
+                    <h5 class="card-title text-primary">Branko Fulurija osvojio bronzu na informatičkoj Balkanijadi.
+                    </h5>
 
                     <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo recusandae nulla rem eos ipsa
-                        praesentium esse magnam nemo dolor
-                        sequi fuga quia quaerat cum, obcaecati hic, molestias minima iste voluptates.
+                        Branko Fulurija iz Višegrada osvojio je bronzanu medalju na informatičkoj Balkanijadi, koja je
+                        održana na Kipru i time osvojio najbolji plasman takmičara iz BiH. Fulurija se plasirao na
+                        svjetsko takmičenje iz informatike koje će biti održano u Kazanju u Rusiji krajem avgusta.
+
+                        Branko Fulurija je prošle godine postao prvak Republike Srpske u informatici, a na takmičenju
+                        BiH u Sarajevu jedini je predstavnik Srpske koji je ostvario dalji plasman na Olimpijadu i
+                        Balkanijadu.
                     </p>
                 </div>
                 <div class="card-footer">
@@ -61,13 +69,16 @@
             <!--- \\\\\\\Post-->
             <div class="card mt-4">
                 <div class="card-body">
-                    <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>10 min ago</div>
-                    <h5 class="card-title text-primary">Lorem ipsum dolor sit amet, consectetur adip.</h5>
+                    <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>June 11th 2016</div>
+                    <h5 class="card-title text-primary">Branko Fulurija plasirao se na Informatičku olimpijadu.</h5>
 
                     <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo recusandae nulla rem eos ipsa
-                        praesentium esse magnam nemo dolor
-                        sequi fuga quia quaerat cum, obcaecati hic, molestias minima iste voluptates.
+                        Maturant Srednje škole „Ivo Andrić“ iz Višegrada Branko Fulurija osvojio je danas drugo mjesto
+                        na takmičenju iz informatike u Sarajevu i plasirao se na Informatičku olimpijadu i Balkanijadu.
+                        Fulurija je u aprilu prošle godine postao prvak Republike Srpske u informatici, a na današnjem
+                        takmičenju na nivou BiH bio je jedini predstavnik Srpske koji se plasirao na Olimpijadu.
+
+                        Informatička olimpijada biće održana u avgustu u Rusiji, a Balkanijada krajem juna na Kipru.
                     </p>
                 </div>
                 <div class="card-footer">
@@ -77,6 +88,37 @@
                     </a>
                     <a *ngIf="doLike('news-3')" href="javascript:void(0)" class="card-link"
                         (click)="toggleLike('news-3')">
+                        <i class="mr-1 fas fa-heart"></i>Liked
+                    </a>
+                </div>
+            </div>
+            <!-- Post /////-->
+
+            <!--- \\\\\\\Post-->
+            <div class="card mt-4">
+                <div class="card-body">
+                    <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>March 20th 2016</div>
+                    <h5 class="card-title text-primary">Branko Fulurija se plasirao na republičko takmičenje iz
+                        informatike.
+                    </h5>
+
+                    <p class="card-text">
+                        Srednjoškolac Branko Fulurija iz Višegrada osvojio je prvo mjesto na regionalnom takmičenju iz
+                        informatike koje je održano u ovom gradu i plasirao se na republičko takmičenje zakazano za 23.
+                        april.
+
+                        Drugo mjesto pripalo je Dimitriju Glibiću iz Višegrada, a treće Milici Škipini iz Foče.
+                        Republički inspektor za informatiku Aleksandra Stanković rekla je Srni da je zadovoljna
+                        organizacijom takmičenja.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <a *ngIf="!doLike('news-4')" href="javascript:void(0)" class="card-link"
+                        (click)="toggleLike('news-4')">
+                        <i class="mr-1 far fa-heart"></i>Like
+                    </a>
+                    <a *ngIf="doLike('news-4')" href="javascript:void(0)" class="card-link"
+                        (click)="toggleLike('news-4')">
                         <i class="mr-1 fas fa-heart"></i>Liked
                     </a>
                 </div>
