@@ -1,5 +1,6 @@
 <h4>{{ title }}</h4>
 <ul class="timeline">
-    <app-cv-item *ngFor="let item of items" [title]="item.title" [dateRange]="item.dateRange" [content]="item.content">
+    <app-cv-item *ngFor="let item of items" [title]="item.title" [dateRange]="item.dateRange" [content]="item.content"
+        [url]="item.url">
     </app-cv-item>
 </ul>

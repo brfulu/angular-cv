@@ -9,6 +9,7 @@ export class CvItemComponent implements OnInit {
   @Input() title: string;
   @Input() content: string;
   @Input() dateRange: string;
+  @Input() url: string = 'https://google.com';
   expanded: boolean = true;
 
   constructor() { }

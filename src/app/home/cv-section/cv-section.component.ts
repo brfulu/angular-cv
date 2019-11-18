@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./cv-section.component.css']
 })
 export class CvSectionComponent implements OnInit {
-  @Input() title: string = 'evo ga';
+  @Input() title: string;
   @Input() items: Array<Object>;
 
   constructor() { }
